@@ -1,0 +1,701 @@
+@media only screen and (max-width: 768px) {
+  /* // menu // */
+  body {
+    overflow-x: hidden;
+  }
+  #header {
+    background-color: #002853;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+  }
+  #header .header {
+    min-height: 8vh;
+    transition: 0.3s ease background-color;
+  }
+  #header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+  }
+  #header .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s ease left;
+  }
+  #header .nav-list ul.active {
+    left: 0%;
+  }
+  #header .nav-list ul a {
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: rgb(101, 119, 121);
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+  }
+  #header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.8);
+    /* margin-right: 20px; */
+  }
+  #header .hamburger .bar {
+    height: 2px;
+    width: 50px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+  }
+  #header .hamburger .bar::after,
+  #header .hamburger .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    transition-property: top, bottom;
+  }
+  .bar::after {
+    top: 8px;
+  }
+  .bar::before {
+    bottom: 8px;
+  }
+  .hamburger.active .bar::before {
+    bottom: 0;
+  }
+  .hamburger.active .bar::after {
+    top: 0;
+  }
+  #logo {
+    padding-left: 0;
+  }
+  .contact {
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+  }
+  .sign-in {
+    padding-right: 0;
+  }
+
+  /* <!-- // Let’s Build Something amazing with GPT-3 OpenAI // --> */
+
+  #phan2 {
+    flex-direction: column;
+  }
+  .build {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+  }
+  .img {
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* <!-- // logooo // --> */
+
+  .logo1 {
+    flex-direction: column;
+  }
+
+  /* <!-- // the possibilities // --> */
+  .are {
+    padding: 70px 15px;
+  }
+  .what {
+    flex-direction: column;
+  }
+  .cl {
+    margin-top: 30px;
+  }
+  .your {
+    flex-direction: column;
+  }
+  .beyond {
+    padding-top: 50px;
+  }
+  .libary {
+    padding-top: 40px;
+  }
+
+  /* // */
+
+  .phan3 {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .phan3 p {
+    padding-top: 10px;
+  }
+
+  .know {
+    margin-top: 50px;
+  }
+  .education {
+    margin-top: 50px;
+  }
+
+  /* <!-- phanduture --> */
+
+  .tong3 {
+    padding: 0px 15px;
+    padding-top: 70px;
+    flex-direction: column;
+  }
+  .end {
+    margin: 40px 5px;
+    width: 100%;
+  }
+
+  /* /<!-- // myaps // -->/ */
+
+  .apps {
+    flex-direction: column;
+    margin: 0px 10px;
+  }
+  .imgss img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* // */
+
+  .chu {
+    padding: 40px 0px;
+  }
+
+  /* <!-- // register // --> */
+
+  .today {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .request p {
+    font-size: 16px;
+  }
+  .get a {
+    font-size: 14px;
+  }
+
+  /* * <!-- // happening // --> */
+
+  .happening {
+    margin-top: 50px;
+    padding-bottom: 0px;
+  }
+  .about {
+    padding-left: 14px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-bottom: 40px;
+  }
+  /* // */
+  .tong5 {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  .lets {
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .soo {
+    margin: 0 auto;
+    margin-top: -7px;
+    width: 100%;
+  }
+  .lets img {
+    width: 100%;
+    height: auto;
+  }
+  .tong4 {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-top: 30px;
+    grid-gap: 20px;
+  }
+
+  /* /// phancuoi /// */
+
+  .step {
+    font-size: 20px;
+    line-height: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .access {
+    margin-top: 50px;
+  }
+
+  /* // */
+
+  .all {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gpt {
+    margin-right: 0;
+  }
+  .gpt p {
+    margin-top: 0;
+  }
+  .links {
+    margin-top: 25px;
+  }
+  .links p {
+    margin-top: 10px;
+  }
+  .company {
+    margin-top: 25px;
+  }
+  .company p {
+    margin-top: 10px;
+  }
+  .getintouch {
+    margin-top: 25px;
+  }
+  .getintouch p {
+    margin-top: 10px;
+  }
+  .cuoi {
+    padding-top: 50px;
+  }
+}
+/* // */
+
+/* ipap */
+
+@media (min-width: 766px) and (max-width: 1260px) {
+  /* // menu // */
+  body {
+    overflow-x: hidden;
+  }
+  #header {
+    background-color: #002853;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+  }
+  #header .header {
+    min-height: 8vh;
+    transition: 0.3s ease background-color;
+  }
+  #header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 20px 30px;
+  }
+  #header .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s ease left;
+  }
+  #header .nav-list ul.active {
+    left: 0%;
+  }
+  #header .nav-list ul a {
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: rgb(101, 119, 121);
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+    font-size: 60px;
+  }
+  #header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.8);
+    /* margin-right: 20px; */
+  }
+  #header .hamburger .bar {
+    height: 2px;
+    width: 50px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+  }
+  #header .hamburger .bar::after,
+  #header .hamburger .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    transition-property: top, bottom;
+  }
+  .bar::after {
+    top: 8px;
+  }
+  .bar::before {
+    bottom: 8px;
+  }
+  .hamburger.active .bar::before {
+    bottom: 0;
+  }
+  .hamburger.active .bar::after {
+    top: 0;
+  }
+  #logo {
+    padding-left: 0;
+    font-size: 40px;
+  }
+  .contact {
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+  }
+  .sign-in {
+    padding-right: 0;
+  }
+
+  /* <!-- // Let’s Build Something amazing with GPT-3 OpenAI // --> */
+
+  #phan2 {
+    flex-direction: column;
+  }
+  .build {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  .build span {
+    font-size: 35px;
+  }
+  .img {
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+  .address input {
+    padding: 30px 100px;
+    font-size: 35px;
+  }
+
+  /* <!-- // logooo // --> */
+
+  .logo1 {
+    flex-direction: column;
+  }
+
+  /* <!-- // the possibilities // --> */
+  .are {
+    padding: 70px 35px;
+  }
+  .what {
+    flex-direction: column;
+  }
+  .cc span {
+    font-size: 40px;
+  }
+  .cl {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .libary {
+    font-size: 30px;
+  }
+  .your {
+    flex-direction: column;
+  }
+  .beyond {
+    padding-top: 50px;
+  }
+  .libary {
+    padding-top: 40px;
+  }
+
+  /* // */
+
+  .phan3 {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .phan3 span {
+    font-size: 40px;
+  }
+  .phan3 p {
+    padding-top: 10px;
+    font-size: 30px;
+  }
+
+  .know {
+    margin-top: 50px;
+  }
+  .education {
+    margin-top: 50px;
+  }
+
+  /* <!-- phanduture --> */
+  .future h1 {
+    font-size: 45px;
+  }
+  .future span {
+    font-size: 30px;
+  }
+  .tong3 {
+    padding: 0px 35px;
+    padding-top: 70px;
+    flex-direction: column;
+  }
+  .end {
+    margin: 40px 5px;
+    width: 100%;
+  }
+  .end span {
+    font-size: 40px;
+  }
+  .dem {
+    font-size: 38px;
+    width: 100%;
+  }
+
+  /* /<!-- // myaps // -->/ */
+
+  .apps {
+    flex-direction: column;
+    margin: 0px 35px;
+  }
+  .imgss img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* // */
+
+  .chu {
+    padding: 40px 0px;
+  }
+  .chu span {
+    font-size: 35px;
+  }
+  .chu h1 {
+    display: block;
+    font-size: 40px;
+  }
+  .chu p {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .chu a {
+    font-size: 35px;
+  }
+  /* <!-- // register // --> */
+
+  .today {
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .request span {
+    font-size: 25px;
+  }
+  .request p {
+    font-size: 30px;
+  }
+  .get a {
+    font-size: 25px;
+  }
+
+  /* * <!-- // happening // --> */
+
+  .happening {
+    margin-top: 50px;
+    padding-bottom: 0px;
+  }
+  .about {
+    padding-left: 35px;
+    font-size: 25px;
+    line-height: 56px;
+    padding-bottom: 40px;
+  }
+
+  /* // */
+
+  .tong5 {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  .lets {
+    margin: 0 auto;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .soo {
+    margin: 0 auto;
+    margin-top: -7px;
+    width: 100%;
+  }
+  .soo span {
+    font-size: 30px;
+  }
+  .soo h3 {
+    font-size: 35px;
+  }
+  .soo p {
+    padding-top: 130px;
+    font-size: 30px;
+  }
+  .lets img {
+    width: 100%;
+    height: auto;
+  }
+  .tong4 {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-top: 30px;
+    grid-gap: 20px;
+  }
+  .it img {
+    width: 700px;
+    object-fit: cover;
+  }
+  .hine {
+    width: 700px;
+    height: 230px;
+  }
+  .hine span {
+    font-size: 20px;
+  }
+  .hine p {
+    font-size: 20px;
+  }
+  .hine h3 {
+    font-size: 25px;
+  }
+
+  /* /// phancuoi /// */
+
+  .step {
+    font-size: 40px;
+    line-height: 80px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .access {
+    margin-top: 90px;
+  }
+  .access a {
+    padding: 25px 70px;
+    font-size: 30px;
+  }
+  /* // */
+
+  .all {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .gpt {
+    margin-right: 0;
+  }
+  .gpt p {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .links {
+    margin-top: 25px;
+  }
+  .links a {
+    font-size: 40px;
+  }
+  .links p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .company {
+    margin-top: 25px;
+  }
+  .company a {
+    font-size: 40px;
+  }
+  .company p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .getintouch {
+    margin-top: 25px;
+  }
+  .getintouch a {
+    font-size: 40px;
+  }
+  .getintouch p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .cuoi {
+    padding-top: 50px;
+    font-size: 40px;
+  }
+}
+/* // */
